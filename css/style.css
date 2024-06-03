@@ -1,0 +1,339 @@
+p,
+span {
+  font-family: "lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "oxygen", sans-serif;
+}
+
+.navlogo {
+  width: 7rem;
+}
+.get_a_quote {
+  border-radius: 50px;
+}
+
+.photo1 {
+  border-radius: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_background {
+  background-color: #f8f9fa; /* You can change this to your desired background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-form {
+  margin-top: 2.5rem;
+}
+
+.written_input {
+  border-radius: 10px 0px;
+  border: none;
+  height: 60px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.025);
+}
+
+.avail {
+  float: right;
+  border: none;
+  border-radius: 10px 0 10px 0;
+  background-color: #6a961f;
+  width: 8rem;
+  height: 3rem;
+  font-weight: bolder;
+  margin-top: 1.25rem;
+}
+
+.package {
+  font-size: 65px;
+  font-weight: bolder;
+}
+
+.package-cards {
+  border-radius: 45px;
+  height: 22rem;
+  border: none;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+  border-radius: 45px;
+  height: 22rem;
+}
+
+.package-text {
+  position: absolute;
+  margin-top: 26vh;
+}
+
+.content {
+  margin-inline: 4.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button-view {
+  border-radius: 30px;
+  width: 8rem;
+}
+
+.blank {
+  width: 3.35rem;
+  height: 0.19rem;
+  background-color: #bcba63;
+}
+
+.hr {
+  width: 100%;
+  height: 10%;
+}
+.hero3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.65rem;
+  color: rgba(14, 13, 13, 0.778);
+}
+.hero4 {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+/* -----feature------ */
+.main-card h4 {
+  font-size: 1.15rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 530;
+  color: #000000;
+  margin-bottom: -0.8px;
+}
+.main-card p {
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #626262;
+}
+
+/* video */
+.button_text {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  line-height: 1.35rem;
+  color: rgb(255, 255, 255);
+}
+/* --------counter------- */
+.counter_2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.42rem;
+  letter-spacing: 0.1rem;
+  color: #6a961f;
+}
+.counter {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.5rem;
+  color: rgba(38, 35, 35, 0.74);
+}
+
+/* ----------testymonial----------------- */
+.testymonial {
+  background-image: url(/compound/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+}
+.imag_tea {
+  margin-top: -2rem;
+}
+.style_card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 13px #cdcdd0;
+}
+.card-body h4 {
+  font-size: 0.85rem;
+  font-weight: 650;
+  color: #625d5d;
+  margin-bottom: -0.8px;
+}
+.card-body p {
+  font-size: 0.73rem;
+  font-weight: 500;
+  color: #7f7f7f;
+}
+/* ---------------------massage----------------- */
+.btn2 {
+  background-color: rgb(106, 150, 31);
+  border-radius: 15px 0px;
+  padding: 0.7rem 3.1rem;
+  margin-top: -4.8rem;
+  position: relative;
+  right: 35%;
+  color: white;
+  font-weight: 645;
+  text-align: center;
+  font-size: 1.15rem;
+}
+.button_text {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 590px) {
+  .btn2 {
+    right: -17%;
+    bottom: 3%;
+    padding: 1.25rem 3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  .button_text {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .btn2 {
+    right: -17%;
+    bottom: 3%;
+    padding: 0.75rem 0.5rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  .button_text {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 337px) {
+  .btn2 {
+    right: -17%;
+    bottom: 3%;
+    padding: 0.75rem 0.5rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.67rem;
+  }
+  .button_text {
+    margin-top: 1rem;
+  }
+}
+.accordion {
+  width: 450px;
+}
+.accordion-title {
+  color: rgb(124, 167, 50);
+  padding: 5px;
+}
+.accordion-content {
+  display: none;
+  cursor: pointer;
+}
+.accordion-title h4 {
+  font-size: 1.16rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 600;
+}
+.accordion-content p {
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  color: rgba(45, 41, 41, 0.785);
+  font-weight: 450;
+  font-family: "Lato", sans-serif;
+}
+.accordion-item {
+  margin-bottom: 10px;
+}
+.accordion-item.active .accordion-content {
+  display: block;
+}
+@media screen and (max-width: 505px) {
+  .accordion-content {
+    font-size: 0.8rem;
+    width: 51%;
+  }
+  .accordion-item h4 {
+    font-size: 1rem;
+  }
+}
+/* last---------------- */
+.button {
+  background-color: rgb(106, 150, 31);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  padding: 10px 25px 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.button:hover {
+  background-color: rgb(29, 28, 28);
+}
+.hero3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.65rem;
+  color: rgba(14, 13, 13, 0.778);
+}
+.hero4 {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+.banar2 {
+  background-image: url("/compound/bannar2.jpg");
+  background-size: cover;
+  height: 439px;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+/* ------------footer---------- */
+.hero5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  line-height: 1rem;
+  color: rgb(204, 194, 194);
+  font-size: 0.9rem;
+}
+.foot-header {
+  color: white;
+  font-size: 1.35rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 550;
+}
+.hero6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  line-height: 2rem;
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+}
+.hero7 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+}

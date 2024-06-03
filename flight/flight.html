@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- --------bootstarp 4.0--------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+    <!-- -----------------css-------------------- -->
+    <link rel="stylesheet" href="flight.css" />
+    <!-- --------------js----------------- -->
+
+    <!-- -------------favicon----------------- -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/compound/cropped-Logo-variations-02-02-300x298.png"
+    />
+    <!-- font family oxygen -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font family lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flight - Wheatear Travels</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark p-4">
+      <div class="container">
+        <img
+          src="../assets/nav-img/wheater-travels.png"
+          alt=""
+          class="navlogo"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white mr-lg-3" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mr-lg-3" href="../pakage.html"
+                >Packages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mr-lg-3" href="#">Flight</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mr-lg-3" href="../hotel/hotel.html"
+                >Hotels</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mr-lg-3" href="../add.html"
+                >Add on</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white mr-lg-3"
+                href="../gallary/gallary.html"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mr-lg-3" href="../about/about.html"
+                >About Us</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn-outline-success text-white get_a_quote">
+            Get A Quote
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <!-- banar of hotel -->
+      <div class="banar"></div>
+      <!-- -----------form------------ -->
+      <div class="container-fluid">
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-md-4" id="col-1">
+              <div class="iner-div"></div>
+              <div
+                class="card p-5"
+                id="col1"
+                style="
+                  border: none;
+                  border-radius: 30px;
+                  box-shadow: 0 4px 8px 0 rgba(175, 220, 148, 0.597);
+                  height: 100%;
+                "
+              >
+                <div class="card-body" style="">
+                  <form id="form1" class="text-center" action="">
+                    <!-- main has 25 px of margin bottom -->
+                    <h3
+                      style="
+                        margin-bottom: 38px;
+                        text-align: center;
+                        color: #777;
+                      "
+                    >
+                      Give The Info
+                    </h3>
+                    <input
+                      type="text"
+                      placeholder="Enter Full Name"
+                      required
+                      style="
+                        width: 100%;
+                        padding: 10px 5px;
+                        margin: 0px 0;
+                        border: 0;
+                        border-bottom: 1px solid #999;
+                        outline: none;
+                        background: transparent;
+                      "
+                    />
+                    <br />
+                    <input
+                      class="mt-4"
+                      type="email"
+                      placeholder="Enter Your Email"
+                      required
+                      style="
+                        width: 100%;
+                        padding: 10px 5px;
+                        margin: 0px 0;
+                        border: 0;
+                        border-bottom: 1px solid #999;
+                        outline: none;
+                        background: transparent;
+                      "
+                    />
+                    <br />
+                    <input
+                      class="mt-4"
+                      type="number"
+                      placeholder="Enter Phone number"
+                      required
+                      style="
+                        width: 100%;
+                        padding: 10px 5px;
+                        margin: 0px 0;
+                        border: 0;
+                        border-bottom: 1px solid #999;
+                        outline: none;
+                        background: transparent;
+                      "
+                    />
+                    <br />
+                    <select
+                      id="cars"
+                      name="cars"
+                      class="form-control mt-4"
+                      style="
+                        border: 0;
+                        border-bottom: 1px solid #999;
+                        outline: none;
+                        background: transparent;
+                        border-radius: 0px;
+                      "
+                      required
+                    >
+                      <option value="gender">Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="others">Others</option>
+                    </select>
+                    <div class="btn-box">
+                      <button
+                        class="btn"
+                        onclick="hideShow1()"
+                        type="button"
+                        id="Next1"
+                      >
+                        Next
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0" id="col-2">
+              <div class="iner-div"></div>
+              <div
+                class="card p-4"
+                id="col2"
+                style="
+                  border: none;
+                  border-radius: 30px;
+                  box-shadow: 0 4px 8px 0 rgba(175, 220, 148, 0.597);
+                  height: 100%;
+                "
+              >
+                <div class="card-body py-4" style="">
+                  <form id="form2" class="text-center" action="">
+                    <h3
+                      class="py-2"
+                      style="
+                        margin-bottom: 0px;
+                        text-align: center;
+                        color: #777;
+                      "
+                    >
+                      Choose Your Date
+                    </h3>
+                    <div class="cont py-3">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label
+                            class="pt-3"
+                            style="
+                              font-family: lato, sans-serif;
+                              font-weight: 600;
+                              font-size: 1rem;
+                              margin-bottom: 0px;
+                            "
+                            >Onward Date</label
+                          >
+                          <br />
+                          <input
+                            type="date"
+                            id="cheakin"
+                            name="cheakin"
+                            class="form-control_1"
+                            required
+                            style="
+                              width: 100%;
+                              padding: 10px 5px;
+                              margin: 5px 0;
+                              border: 0;
+                              border-bottom: 1px solid #999;
+                              outline: none;
+                              background: transparent;
+                            "
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label
+                            class="pt-3"
+                            style="
+                              font-family: lato, sans-serif;
+                              font-weight: 600;
+                              font-size: 1rem;
+                              margin-bottom: 0px;
+                            "
+                            >Returned Date</label
+                          >
+                          <br />
+                          <input
+                            type="date"
+                            id="cheakout"
+                            name="cheakout"
+                            class="form-control_1"
+                            required
+                            style="
+                              width: 100%;
+                              padding: 10px 5px;
+                              margin: 5px 0;
+                              border: 0;
+                              border-bottom: 1px solid #999;
+                              outline: none;
+                              background: transparent;
+                            "
+                          />
+                        </div>
+                      </div>
+                      <label class="pt-3"
+                        ><p
+                          style="
+                            font-family: lato, sans-serif;
+                            font-weight: 800;
+                            font-size: 1rem;
+                            margin-bottom: 0px;
+                          "
+                        >
+                          Preferred Timing
+                        </p></label
+                      >
+                      <br />
+                      <select
+                        id="cars"
+                        name="cars"
+                        class="form-control"
+                        style="
+                          border: 0;
+                          border-bottom: 1px solid #999;
+                          outline: none;
+                          background: transparent;
+                          border-radius: 0px;
+                        "
+                        required
+                      >
+                        <option value="select">Select Your Timing</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                        <option value="night">Night</option>
+                      </select>
+                      <div class="row pt-3">
+                        <div class="col-md-6">
+                          <label
+                            class="py-2"
+                            style="
+                              font-family: lato, sans-serif;
+                              font-weight: 600;
+                              font-size: 1rem;
+                              margin-bottom: 0px;
+                            "
+                            >From</label
+                          >
+                          <br />
+                          <input
+                            type="text"
+                            placeholder="Enter Your City"
+                            required
+                            style="
+                              width: 100%;
+                              padding: 10px 5px;
+                              margin: 5px 0;
+                              border: 0;
+                              border-bottom: 1px solid #999;
+                              outline: none;
+                              background: transparent;
+                            "
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label
+                            class="py-2"
+                            style="
+                              font-family: lato, sans-serif;
+                              font-weight: 600;
+                              font-size: 1rem;
+                              margin-bottom: 0px;
+                            "
+                            >To</label
+                          >
+                          <br />
+                          <input
+                            type="text"
+                            placeholder="Enter Your City"
+                            required
+                            style="
+                              width: 100%;
+                              padding: 10px 5px;
+                              margin: 5px 0;
+                              border: 0;
+                              border-bottom: 1px solid #999;
+                              outline: none;
+                              background: transparent;
+                            "
+                          />
+                        </div>
+                      </div>
+
+                      <div class="btn-box">
+                        <button
+                          class="btn"
+                          onclick="hideShow2()"
+                          type="button"
+                          id="Next2"
+                        >
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0" id="col-3">
+              <div class="iner-div"></div>
+              <div
+                class="card p-5"
+                id="col3"
+                style="
+                  border: none;
+                  border-radius: 30px;
+                  box-shadow: 0 4px 8px 0 rgba(175, 220, 148, 0.597);
+                  height: 100%;
+                "
+              >
+                <div class="card-body" style="">
+                  <form id="form3" action="">
+                    <h3
+                      style="
+                        margin-bottom: 20px;
+                        text-align: center;
+                        color: #777;
+                      "
+                    >
+                      Flight Details
+                    </h3>
+                    <label class="py-3"
+                      ><p
+                        style="
+                          font-family: lato, sans-serif;
+                          font-weight: 800;
+                          font-size: 1rem;
+                          margin-bottom: 0px;
+                        "
+                      >
+                        Number of Passenger
+                      </p></label
+                    >
+                    <br />
+                    <select id="cars" name="cars" class="form-control" required>
+                      <option value="5 star">Choose Passanger</option>
+                      <option value="4 star">1</option>
+                      <option value="3 star">2</option>
+                      <option value="2 star">3</option>
+                      <option value="1 star">4</option>
+                      <option value="resort">5</option>
+                      <option value="villa">6</option>
+                      <option value="villa">7</option>
+                      <option value="villa">8</option>
+                      <option value="9">9</option>
+                    </select>
+                    <label class="py-3"
+                      ><p
+                        style="
+                          font-family: lato, sans-serif;
+                          font-weight: 800;
+                          font-size: 1rem;
+                          margin-bottom: 0px;
+                        "
+                      >
+                        Passenger Type
+                      </p></label
+                    >
+                    <br />
+                    <select id="cars" name="cars" class="form-control" required>
+                      <option value="5 star">Regular</option>
+                      <option value="4 star">Student</option>
+                      <option value="3 star">Senior Citizen</option>
+                      <option value="1 star">Corporate</option>
+                    </select>
+                    <label class="py-3"
+                      ><p
+                        style="
+                          font-family: lato, sans-serif;
+                          font-weight: 800;
+                          font-size: 1rem;
+                          margin-bottom: 0px;
+                        "
+                      >
+                        Fare Type
+                      </p></label
+                    >
+                    <br />
+                    <select id="cars" name="cars" class="form-control" required>
+                      <option value="economy">Economy</option>
+                      <option value="premium">Premium Economy</option>
+                      <option value="business">Business</option>
+                    </select>
+                    <div class="btn-box">
+                      <button
+                        class="btn"
+                        onclick="hideShow3()"
+                        type="button"
+                        id="preview"
+                      >
+                        Preview
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-5">
+            <div class="col-6 btn-box">
+              <button class="btn float-right" type="Submit" id="submit1">
+                Submit
+              </button>
+            </div>
+            <div class="col-6 btn-box">
+              <button class="btn" type="Submit" id="submit2">Cancel</button>
+            </div>
+          </div>
+        </div>
+                
+      </div>
+
+      <!-- --------massage------------ -->
+      <div class="container my-5 py-5">
+        <div class="row py-5">
+          <div
+            class="col-md-6"
+            style="
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+            "
+          >
+            <div class="card image" style="width: 70%; border-radius: 12px">
+              <img
+                class="img-fluid"
+                style="border-radius: 12px"
+                src="/compound/gallary-7.jpg"
+              />
+            </div>
+            <button class="btn btn2">
+              <p class="button_text">
+                Let's Beautify Your<br />
+                Garden Togenther!
+              </p>
+            </button>
+          </div>
+          <div class="col-md-6">
+            <div class="ml-5 ml-sm-0 mt-5 mt-md-0 head-1">
+              <h2
+                class=""
+                style="font-family: Oxygen, sans-serif; font-weight: 600"
+              >
+                Questions & Answers
+              </h2>
+              <p
+                class="my-4"
+                style="
+                  font-family: Lato, sans-serif;
+                  font-weight: 400;
+                  color: rgba(46, 45, 45, 0.751);
+                  width: 90%;
+                "
+              >
+                Use these paragraphs to focus on the topic in the headline. Make
+                sure you keep it short and attractive.
+              </p>
+            </div>
+            <div class="head-2">
+              <div class="container" style="padding-left: 0px">
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <div class="accordion-title d-flex">
+                      <span class="pr-2"
+                        ><?xml version="1.0" ?><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="26px"
+                          height="26px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#000000"
+                          />
+                        </svg>
+                      </span>
+                      <h4>
+                        How should I book a ticket if I don’t have a surname?
+                      </h4>
+                    </div>
+                    <div class="accordion-content">
+                      <p class="ml-5">
+                        In case, you don’t have a surname mentioned in your
+                        government ID, you can use your first name as your
+                        surname during your booking. For example: A person with
+                        the name ‘XYZ’ can fill in their surname as ‘XYZ’ during
+                        the booking. This way the booking would be made in the
+                        name of (Title) XYZ XYZ.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <div class="accordion-title d-flex">
+                      <span class="pr-2"
+                        ><?xml version="1.0" ?><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="26px"
+                          height="26px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#000000"
+                          />
+                        </svg>
+                      </span>
+                      <h4>
+                        Can I cancel segments in my booking and make the ticket
+                        open-dated?
+                      </h4>
+                    </div>
+                    <div class="accordion-content">
+                      <p class="ml-5">
+                        No. You cannot change the segment to open-dated. Airlines do not provide open tickets.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- <div class="accordion-item">
+                    <div class="accordion-title d-flex">
+                      <span class="pr-2"
+                        ><?xml version="1.0" ?><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="26px"
+                          height="26px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#000000"
+                          />
+                        </svg>
+                      </span>
+                      <h4>Is you worker certifed?</h4>
+                    </div>
+                    <div class="accordion-content">
+                      <p class="ml-5">
+                        Use this space to answer the commonly asked question
+                        you've mentioned above. Make sure your answer is
+                        accurate and understandable by your users. Although you
+                        need to keep this short, your answer should contain all
+                        the details to match your user expectations.
+                      </p>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer style="background-color: rgb(32, 39, 20)">
+        <div class="container" style="padding: 7rem 0rem 5rem 0rem">
+          <div class="row ml-5 ml-md-0">
+            <div class="col-lg-3 col-sm-6 xs-12">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="../assets/nav-img/wheater-travels.png"
+                  width="145"
+                  height="146"
+                  alt=""
+                />
+              </a>
+              <p class="hero5">
+                *Terms - Redeemable upto 10% on your next package booking.
+              </p>
+            </div>
+            <div class="col-lg-3 col-sm-6 xs-12">
+              <h3 class="foot-header">Contact Info</h3>
+              <p class="hero6 py-3">
+                88 Maharshi Devendra Road<br/>
+                1st Floor
+                Kolkata<br/>
+                033 69029381<br/>
+                <a
+                  href="enquiry@wheateartravels.com"
+                  previewlistener="true"
+                  style="color: rgb(152, 152, 81)"
+                  >enquiry@wheateartravels.com</a>
+              </p>
+            </div>
+            <div class="col-lg-3 col-sm-6 xs-12">
+              <h3 class="foot-header">Service</h3>
+              <div class="py-3">
+                <ul class="list-unstyled foot_li">
+                  <li class="">
+                    <a class="text-start text-light hero7" href=""
+                      >Terms and Condition</a
+                    >
+                  </li>
+                  <li class="">
+                    <a class="text-start text-light hero7" href=""
+                      >Privacy Policy
+                      </a
+                    >
+                  </li>
+                  <li class="">
+                    <a class="text-start text-light hero7" href=""
+                      >Cancellation Policy
+                      </a
+                    >
+                  </li>
+                  <li class="">
+                    <a class="text-start text-light hero7" href=""
+                      >Disclaimer</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 xs-12">
+              <h3 class="foot-header">Get In Touch</h3>
+              <p class="hero6 pt-3">
+                An attractive line about the heading above.
+              </p>
+              <div class="row">
+                <div
+                  class="facebook d-flex align-items-center justify-content-center ml-4"
+                  style="
+                    background-color: rgb(106, 150, 31);
+                    height: 2.5rem;
+                    width: 2.5rem;
+                  "
+                >  <a
+                  href="https://www.facebook.com/profile.php?id=61560026336025"
+                  previewlistener="true"
+                  target="blank"
+                  style="color: rgb(152, 152, 81)"
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="13"
+                    fill="currentColor"
+                    class="bi bi-facebook text-light"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                </a>
+                </div>
+                <!-- <div
+                  class="tweeter d-flex align-items-center justify-content-center ml-4"
+                  style="
+                    background-color: rgb(106, 150, 31);
+                    height: 2.5rem;
+                    width: 2.5rem;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="13"
+                    fill="currentColor"
+                    class="bi bi-twitter text-light"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                    />
+                  </svg>
+                </div> -->
+                <div
+                  class="instagram d-flex align-items-center justify-content-center ml-4"
+                  style="
+                    background-color: rgb(106, 150, 31);
+                    height: 2.5rem;
+                    width: 2.5rem;
+                  "
+                >
+                <a
+                  href="https://www.instagram.com/wheateartravels/"
+                  previewlistener="true"
+                  target="blank"
+                  style="color: rgb(152, 152, 81)"
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="13"
+                    fill="currentColor"
+                    class="bi bi-instagram text-light"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="background-color: rgba(93, 94, 88, 0.577)" />
+        <div class="container py-sm-0 py-md-5">
+          <div class="row">
+            <div
+              class="col-md-6 col-sm-12 xs-12 d-flex justify-content-center justify-content-md-start"
+            >
+              <p class="hero6">Copyright © 2024 Wheatear Travels</p>
+            </div>
+            <div
+              class="col-md-6 col-sm-12 xs-12 d-flex justify-content-center justify-content-md-end"
+            >
+              <p class="hero6">
+                Maintained by
+                <a
+                  href="https://aarhatiserv.com/"
+                  previewlistener="true"
+                  style="color: rgb(152, 152, 81)"
+                  >AARHAT ISERV
+                  </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- --------js----------------- -->
+    <script>
+      const accordionItems = document.querySelectorAll(".accordion-item");
+      accordionItems.forEach((item) => {
+        const title = item.querySelector(".accordion-title");
+        const content = item.querySelector(".accordion-content");
+
+        title.addEventListener("click", () => {
+          for (var i = 0; i < accordionItems.length; i++) {
+            if (accordionItems[i] != item) {
+              accordionItems[i].classList.remove("active");
+            } else {
+              item.classList.toggle("active");
+            }
+          }
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // document.getElementById("col-1").style.filter = "blur(10px)";
+      document.getElementById("col-2").style.filter = "blur(10px)";
+      document.getElementById("col1").style.backgroundColor = "white";
+      document.getElementById("col2").style.backgroundColor =
+        "rgba(97, 99, 96, 0.052)";
+      document.getElementById("col3").style.backgroundColor =
+        "rgba(97, 99, 96, 0.052)";
+      document.getElementById("col-3").style.filter = "blur(10px)";
+      document.getElementById("submit1").style.display = "none";
+      document.getElementById("submit2").style.display = "none";
+      function hideShow1() {
+        document.getElementById("col-1").style.filter = "blur(10px)";
+        document.getElementById("col-2").style.filter = "blur(0px)";
+        document.getElementById("col-3").style.filter = "blur(10px)";
+        document.getElementById("col1").style.backgroundColor =
+          "rgba(97, 99, 96, 0.052)";
+        document.getElementById("col2").style.backgroundColor = "white";
+      }
+      function hideShow2() {
+        document.getElementById("col-1").style.filter = "blur(10px)";
+        document.getElementById("col-2").style.filter = "blur(10px)";
+        document.getElementById("col-3").style.filter = "blur(0px)";
+        document.getElementById("col3").style.backgroundColor = "white";
+        document.getElementById("col2").style.backgroundColor =
+          "rgba(97, 99, 96, 0.052)";
+      }
+      function hideShow3() {
+        document.getElementById("col-1").style.filter = "blur(0px)";
+        document.getElementById("col-2").style.filter = "blur(0px)";
+        document.getElementById("col-3").style.filter = "blur(0px)";
+        document.getElementById("submit1").style.display = "block";
+        document.getElementById("col1").style.backgroundColor = "white";
+        document.getElementById("col2").style.backgroundColor = "white";
+        document.getElementById("submit2").style.display = "block";
+        document.getElementById("preview").style.display = "none";
+        document.getElementById("Next1").style.display = "none";
+        document.getElementById("Next2").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
